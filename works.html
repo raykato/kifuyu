@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>movie works</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <div class="header">
+        <a href="top.html"><img src="image/aboutus/header.png"></a>
+      </div>
+
+      <!-- ハンバーガーメニュー -->
+      <div class="hamburger-menu">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <div class="menu-content">
+          <nav>
+            <ul>
+              <li><a href="top.html">TOP</a></li>
+              <li><a href="aboutus.html">ABOUT US</a></li>
+              <li><a href="works.html">WORKS</a></li>
+              <li><a href="ourservice.html">OUR SERVICE</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+        <script>
+         var scrollAnimationElm = document.querySelectorAll('.sa');
+         var scrollAnimationFunc = function() {
+         for(var i = 0; i < scrollAnimationElm.length; i++) {
+         var triggerMargin = 300;
+         if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+         scrollAnimationElm[i].classList.add('show');
+         }
+        }
+       }
+        window.addEventListener('load', scrollAnimationFunc);
+        window.addEventListener('scroll', scrollAnimationFunc);
+       </script>
+
+       <!-- movie works -->
+       <div class="movieworks2">
+         <img src="image/movieworks/movieworks.png">
+            <div class="movieworks_text">
+              <img src="image/movieworks/movieworks_text.png">
+            </div>
+              <div class="reelmovie">
+                <img src="image/movieworks/kifuyuproduction.png">
+              </div>
+              <div class="reelmovie_video">
+              <iframe title="vimeo-player" src="https://player.vimeo.com/video/671640545?h=9d8ecd58fa" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="weddingmovie">
+                <img src="image/movieworks/weddingmovie.png">
+              </div>
+              <div class="weddingmovie_video">
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/654400263?h=bbb20e5f14" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="biyoushipr">
+                <img src="image/movieworks/biyoushiprmovie.png">
+              </div>
+              <div class="biyoushipr_video">
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/670504959?h=92a27be97f" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="singersongwriter">
+                <img src="image/movieworks/singersongwriter.png">
+              </div>
+              <div class="singersongwriter_video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xrVJidadfRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+       </div>
+
+       <div class="fotter">
+         <p>©️2022 kifuyu production</p>
+       </div>
+       
+    </body>
+</html>
